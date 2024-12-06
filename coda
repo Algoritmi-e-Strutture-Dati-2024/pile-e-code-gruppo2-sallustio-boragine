@@ -1,0 +1,39 @@
+#include <iostream>
+#include"ListaPuntatori.cpp"
+template <typename T>
+class Coda{
+  private:
+    ListaPuntatori<T> coda;
+  public:
+    void enqueue(T valore){
+      //aggiungere un elemento in coda
+      coda.inslista(valore, coda.lunghezza());
+    }
+
+    T dequeue(){
+        if(coda.leggilista()
+          return coda.lung==0;
+        else{
+          T valore = coda.leggilista(1); //legge il valore inserito in coda
+          coda.canclista(1);//e lo rimuovi
+          return valore;
+    		}
+	}
+    T front() const{
+        if(coda.listavuota()
+          return coda.lung==0;
+        else
+          return coda.leggilista(1);
+        
+    }
+
+    bool isEmpty() const{
+      return coda.listavuota();
+    }
+
+    int size() const{
+      return coda.lunghezza();
+    }
+   }
+
+    
